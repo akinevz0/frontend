@@ -1,0 +1,9 @@
+.vscode/
+
+
+*.pdf
+resume/
+dotfiles/
+
+node_modules/
+
