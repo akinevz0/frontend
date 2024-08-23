@@ -1,0 +1,46 @@
+/* want to start off with a few niceties */
+body {
+	margin: 5em;
+	background-color: #eee;
+}
+
+.hasFlex {
+	display: flex;
+}
+
+.hasColumns {
+	flex-direction: row;
+}
+
+.hasFlex>section {
+	padding-right: 5em;
+}
+
+.hasFlex div {
+	padding-bottom: 2em;
+}
+
+ul li>h5 {
+	margin: 0;
+}
+
+@media screen and (max-width:750px) {
+	.hasFlex {
+		flex-wrap: wrap;
+	}
+
+	/* .hasFlex>section {
+		display: flex;
+		flex-direction: column;
+	} */
+
+	.hasFlex>section>section {
+		align-self: center;
+	}
+
+	.hasFlex {
+		flex-direction: column;
+	}
+
+	/* .hasFlex:first-child { flex-basis: 100%; } */
+}
